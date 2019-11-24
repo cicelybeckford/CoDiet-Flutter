@@ -1,4 +1,4 @@
-# codiet
+# CoDiet
 
 A new Flutter project.
 
