@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase/firebase.dart';
-import 'package:codiet/root_page.dart';
-import 'package:codiet/auth.dart';
+import 'package:codiet/pages/root_page.dart';
+import 'package:codiet/utils/auth.dart';
 
 void main() {
   runApp(MyApp());

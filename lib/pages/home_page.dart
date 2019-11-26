@@ -1,7 +1,7 @@
 import 'dart:html' as html;
 import 'package:flutter/material.dart';
-import 'package:codiet/auth.dart';
-import 'package:codiet/responsive_widget.dart';
+import 'package:codiet/utils/auth.dart';
+import 'package:codiet/utils/responsive_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:firebase/firebase.dart';
 import 'package:intl/intl.dart';

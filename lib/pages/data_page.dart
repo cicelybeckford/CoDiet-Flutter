@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:codiet/UserInfo.dart';
-import 'package:codiet/centered_view.dart';
+import 'package:codiet/models/UserInfo.dart';
+import 'package:codiet/utils/centered_view.dart';
 import 'package:firebase/firebase.dart' as fb;
 import 'dart:async';
 import 'package:intl/intl.dart';

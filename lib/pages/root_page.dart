@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase/firebase.dart' as fb;
-import 'package:codiet/home_page.dart';
-import 'package:codiet/auth_page.dart';
-import 'package:codiet/data_page.dart';
-import 'package:codiet/auth.dart';
+import 'package:codiet/pages/home_page.dart';
+import 'package:codiet/pages/auth_page.dart';
+import 'package:codiet/pages/data_page.dart';
+import 'package:codiet/utils/auth.dart';
 
 enum AuthStatus {
   NOT_DETERMINED,

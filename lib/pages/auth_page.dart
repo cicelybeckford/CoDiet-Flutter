@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:codiet/auth.dart';
-import 'package:codiet/centered_view.dart';
+import 'package:codiet/utils/auth.dart';
+import 'package:codiet/utils/centered_view.dart';
 import 'package:firebase/firebase.dart' as fb;
 
 
