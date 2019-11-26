@@ -1,11 +1,39 @@
 import 'dart:html' as html;
 import 'package:flutter/material.dart';
+import 'package:codiet/auth.dart';
 import 'package:codiet/responsive_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:firebase/firebase.dart';
 import 'package:intl/intl.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({Key key}) : super(key: key);
+class HomePage extends StatefulWidget {
+
+  HomePage({Key key, this.auth, this.userId, this.logoutCallback});
+  
+  final BaseAuth auth;
+  final VoidCallback logoutCallback;
+  final String userId;
+
+  @override
+  State<StatefulWidget> createState() => new _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  // final Firestore dc = firestore();
+  // final FirebaseDatabase db = FirebaseDatabase.instance;
+
+  // Database db = database();
+  // DatabaseReference ref = db.ref("messages");
+  //TODO: handle populating the page with actual info from the db
+  signOut() async {
+    try {
+      await widget.auth.signOut();
+      widget.logoutCallback();
+    } catch (e) {
+      print(e);
+    }
+  }
 
   List<Widget> navButtons() => [
         NavButton(
@@ -24,6 +52,12 @@ class HomeView extends StatelessWidget {
           text: "Summaries",
           onPressed: () {
             html.window.open("https://google.com", "CoDiet");
+          },
+        ),
+        NavButton(
+          text: "Logout",
+          onPressed: () {
+            signOut();
           },
         ),
       ];
