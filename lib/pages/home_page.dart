@@ -55,12 +55,6 @@ class _HomePageState extends State<HomePage> {
       },
     ),
     NavButton(
-      text: "Summaries",
-      onPressed: () {
-        html.window.open("https://google.com", "CoDiet");
-      },
-    ),
-    NavButton(
       text: "Logout",
       onPressed: () {
         signOut();
