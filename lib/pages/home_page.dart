@@ -1,4 +1,5 @@
 import 'dart:html' as html;
+import 'package:codiet/pages/journey_page.dart';
 import 'package:flutter/material.dart';
 import 'package:codiet/utils/auth.dart';
 import 'package:codiet/utils/responsive_widget.dart';
@@ -39,13 +40,18 @@ class _HomePageState extends State<HomePage> {
         NavButton(
           text: "Home",
           onPressed: () {
-            html.window.open("https://google.com", "CoDiet");
+            // html.window.open("https://google.com", "CoDiet");
           },
         ),
         NavButton(
           text: "Journey",
           onPressed: () {
-            html.window.open("https://google.com", "CoDiet");
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => UserJourney(userId: widget.userId),
+                ),
+              );
           },
         ),
         NavButton(

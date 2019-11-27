@@ -18,10 +18,6 @@ class MyApp extends StatelessWidget {
         primaryColorDark: Colors.white,
       ),
       home: new RootPage(auth: new FirebaseAuth()),
-      routes: <String, WidgetBuilder>{
-        // 'Journey': (context) => 
-        // 'Summaries': (context) =>
-      },
     );
   }
 }
