@@ -1,4 +1,4 @@
-import 'package:codiet/utils/weight_series.dart';
+import 'package:codiet/models/weight_series.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:codiet/models/UserInfo.dart';

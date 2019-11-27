@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:codiet/utils/auth.dart';
 import 'package:codiet/utils/responsive_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:firebase/firebase.dart';
+import 'package:codiet/utils/nav_buttons.dart';
+import 'package:codiet/utils/nav_header.dart';
 import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,37 +37,37 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  List<Widget> navButtons() => [
-        NavButton(
-          text: "Home",
-          onPressed: () {
-            // html.window.open("https://google.com", "CoDiet");
-          },
-        ),
-        NavButton(
-          text: "Journey",
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => UserJourney(userId: widget.userId),
-                ),
-              );
-          },
-        ),
-        NavButton(
-          text: "Summaries",
-          onPressed: () {
-            html.window.open("https://google.com", "CoDiet");
-          },
-        ),
-        NavButton(
-          text: "Logout",
-          onPressed: () {
-            signOut();
-          },
-        ),
-      ];
+  List<NavButton> navButtons() => [
+    NavButton(
+      text: "Home",
+      onPressed: () {
+        // html.window.open("https://google.com", "CoDiet");
+      },
+    ),
+    NavButton(
+      text: "Journey",
+      onPressed: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => UserJourney(userId: widget.userId),
+            ),
+          );
+      },
+    ),
+    NavButton(
+      text: "Summaries",
+      onPressed: () {
+        html.window.open("https://google.com", "CoDiet");
+      },
+    ),
+    NavButton(
+      text: "Logout",
+      onPressed: () {
+        signOut();
+      },
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -117,64 +118,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-}
-
-class NavHeader extends StatelessWidget {
-  final List<Widget> navButtons;
-
-  const NavHeader({Key key, this.navButtons}) : super(key: key);
-
-  Widget build(BuildContext context) {
-    return ResponsiveWidget(
-      largeScreen: Row(
-        mainAxisAlignment: ResponsiveWidget.isSmallScreen(context)
-            ? MainAxisAlignment.center
-            : MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          if (!ResponsiveWidget.isSmallScreen(context))
-            Row(
-              children: navButtons,
-            )
-        ],
-      ),
-    );
-  }
-}
-
-class NavButton extends StatelessWidget {
-  final text;
-  final onPressed;
-  final Color color;
-
-  const NavButton(
-      {Key key,
-      @required this.text,
-      @required this.onPressed,
-      this.color = Colors.transparent,
-      })
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    if (text == "Home") {
-      return FlatButton(
-        child: Text(text, textScaleFactor: 1.3, style: TextStyle(color: Colors.white)),
-        color: Colors.blue,
-        onPressed: () {
-          html.window.open("https://google.com", "CoDiet");
-        },
-      );
-    } else {
-      return OutlineButton(
-      child: Text(text, textScaleFactor: 1.3,),
-      borderSide: BorderSide(
-        color: color,
-      ),
-      onPressed: onPressed,
-      );
-    }
   }
 }
 

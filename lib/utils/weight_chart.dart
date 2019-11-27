@@ -1,5 +1,5 @@
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:codiet/utils/weight_series.dart';
+import 'package:codiet/models/weight_series.dart';
 import 'package:flutter/material.dart';
 
 class WeightJourney extends StatelessWidget {
