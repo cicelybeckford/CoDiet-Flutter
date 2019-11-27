@@ -21,10 +21,8 @@ class _UserDataState extends State<UserData> {
   final TextEditingController _controller = new TextEditingController();
 
   UserInfo newUser = new UserInfo();
-  List<String> _goals = <String>['', 'Lose weight', 'Maintain weight', 'Gain weight'];
   List<String> _levels = <String>['', 'Sedentary', 'Lightly active', 'Moderately active', 'Highly active', 'Super athletic'];
   List<String> _sexes = <String>['', 'Female', 'Male'];
-  String _goal = '';
   String _activityLevel = '';
   String _sex = '';
 
@@ -93,7 +91,6 @@ class _UserDataState extends State<UserData> {
       var map = {
         "completeSignUp": "true",
         'name': newUser.name,
-        'goal': newUser.goal,
         'activityLevel': newUser.activityLevel,
         'sex': newUser.sex,
         'dob': newUser.dob.toString(),
@@ -137,39 +134,6 @@ class _UserDataState extends State<UserData> {
                     LengthLimitingTextInputFormatter(30),
                   ],
                   onSaved: (val) => newUser.name = val,
-                ),
-                new FormField(
-                  builder: (FormFieldState state) {
-                    return InputDecorator(
-                      decoration: InputDecoration(
-                        icon: const Icon(Icons.timer),
-                        labelText: 'Goal',
-                      ),
-                      isEmpty: _goal == '',
-                      child: new DropdownButtonHideUnderline(
-                        child: new DropdownButton(
-                          value: _goal,
-                          isDense: true,
-                          onChanged: (String newValue) {
-                            setState(() {
-                              newUser.goal = newValue;
-                              _goal = newValue;
-                              state.didChange(newValue);
-                            });
-                          },
-                          items: _goals.map((String value) {
-                            return new DropdownMenuItem(
-                              value: value,
-                              child: new Text(value),
-                            );
-                          }).toList(),
-                        ),
-                      ),
-                    );
-                  },
-                  validator: (val) {
-                    return val != '' ? null : 'Please select an option';
-                  },
                 ),
                 new FormField(
                   builder: (FormFieldState state) {
