@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:codiet/home_view.dart';
+import 'package:firebase/firebase.dart';
+import 'package:codiet/pages/root_page.dart';
+import 'package:codiet/utils/auth.dart';
 
-main() {
+void main() {
   runApp(MyApp());
 }
 
@@ -13,11 +15,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // brightness: Brightness.dark,
         primaryColorDark: Colors.white,
-        // fontFamily: "GoogleSansRegular",
       ),
-      home: HomeView(),
+      home: new RootPage(auth: new FirebaseAuth()),
+      routes: <String, WidgetBuilder>{
+        // 'Journey': (context) => 
+        // 'Summaries': (context) =>
+      },
     );
   }
 }
