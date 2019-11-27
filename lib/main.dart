@@ -1,5 +1,5 @@
+  
 import 'package:flutter/material.dart';
-import 'package:firebase/firebase.dart';
 import 'package:codiet/pages/root_page.dart';
 import 'package:codiet/utils/auth.dart';
 
@@ -18,10 +18,6 @@ class MyApp extends StatelessWidget {
         primaryColorDark: Colors.white,
       ),
       home: new RootPage(auth: new FirebaseAuth()),
-      routes: <String, WidgetBuilder>{
-        // 'Journey': (context) => 
-        // 'Summaries': (context) =>
-      },
     );
   }
 }
