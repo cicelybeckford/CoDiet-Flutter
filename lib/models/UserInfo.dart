@@ -1,5 +1,4 @@
 class UserInfo {
-  String goal;
   String activityLevel;
   String sex;
   String name;
@@ -45,17 +44,13 @@ class UserInfo {
             temp = bmr * 1.9;
             break;
     }
-
-    switch(goal) {
-        case "Maintain weight":
-            calories = temp.round();
-            break;
-        case "Lose weight":
-            calories = (temp - 500).round();
-            break;
-        case "Gain weight":
-            calories = (temp + 500).round();
-            break;
+    if (goalWeight > initialWeight) {
+      calories = (temp + 500).round(); // Gain weight
+    } else if (goalWeight < initialWeight) {
+      calories = (temp - 500).round(); // Lose weight
+    }
+    else {
+      calories = temp.round(); // Maintain weight
     }
   }
 }
