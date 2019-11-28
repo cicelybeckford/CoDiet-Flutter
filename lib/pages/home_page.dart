@@ -28,14 +28,15 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId );
       var snap;
-      ref.limitToFirst(1).once('value').then((e){ 
+      ref.once('value').then((e){ 
         e.snapshot.forEach((snapshot) {
-          snap = snapshot.val();
+          snap = snapshot.forEach((e) {
+
+        });
           print(snap);
-          //setState(() {
+          setState(() {
       
-          //});
-          print(snap); 
+          });
           // initial = convertToDate(snap.substring(5, 7) + '/' 
           // + snap.substring(9, 11) + '/' + snap.substring(0, 3));
         });
