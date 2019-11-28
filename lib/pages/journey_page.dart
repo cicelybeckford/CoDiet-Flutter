@@ -122,6 +122,7 @@ class _UserJourneyState extends State<UserJourney> {
     new Row(children: <Widget>[new SizedBox(width: 180),  new WeightJourney(data: data,)],));
     return new Scaffold(
       key: _scaffoldKey,
+      backgroundColor: Colors.white,
       body: 
         new SafeArea(
           top: false,
@@ -195,7 +196,7 @@ class _UserJourneyState extends State<UserJourney> {
                 ),
                 new SizedBox(
                   width: 120,
-                  height: 100,
+                  height: 70,
                 )
               ]),
               new Row(

@@ -1,5 +1,4 @@
 import 'package:codiet/utils/auth.dart';
-import 'package:codiet/utils/nav_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:codiet/pages/profile_page.dart';
 import 'package:codiet/pages/journey_page.dart';
@@ -43,31 +42,8 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin 
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        elevation: 1,
         backgroundColor: Colors.blue,
-        // title: new Row(
-        //   mainAxisAlignment: MainAxisAlignment.start,
-        //     children: <Widget>[
-        //       new SizedBox(
-        //         width: 70,
-        //       ),
-        //       Image.asset(
-        //         'assets/logo.png',
-        //         width: 120,
-        //         height: 150,
-        //       ),
-        //     ],
-        //   ),
-        // actions: <Widget> [
-        //     NavButton(
-        //       text: "Logout",
-        //       onPressed: () {
-        //         signOut();
-        //       },
-        //     ),
-        //     new SizedBox(
-        //       width: 100,
-        //     )
-        // ], 
         flexibleSpace: new TabBar(
           controller: controller,
           tabs: <Tab>[
@@ -86,7 +62,16 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin 
             userId: widget.userId,
           ),
         ]
-      )
+      ),
+       floatingActionButton: Padding(
+         padding: const EdgeInsets.only(bottom: 40, right: 40),
+         child: FloatingActionButton(
+          backgroundColor: Colors.blue,
+          elevation: 9,
+          child: Icon(Icons.exit_to_app, color: Colors.white,),
+          onPressed: () { signOut(); },
+        ),
+      ),
     );
   }
 }

@@ -28,31 +28,6 @@ class _ProfilePageState extends State<ProfilePage> {
     return ResponsiveWidget(
       largeScreen: Scaffold(
         backgroundColor: Colors.white,
-        // appBar: AppBar(
-        //   elevation: 1.5,
-        //   backgroundColor: Colors.blue[50],
-        //   title: Row(
-        //     mainAxisAlignment: MainAxisAlignment.start,
-        //     children: <Widget>[
-        //       Image.asset(
-        //         'assets/logo.png',
-        //         width: 120,
-        //         height: 150,
-        //       ),
-        //     ],
-        //   ),
-        //   actions: <Widget> [
-        //     NavHeader(navButtons: navButtons()),
-        //   ]
-        // ),
-        // drawer: ResponsiveWidget.isSmallScreen(context)
-        //     ? Drawer(
-        //         child: ListView(
-        //           padding: const EdgeInsets.all(20),
-        //           children: navButtons(),
-        //         ),
-        //       )
-        //     : null,
         body: SingleChildScrollView(
           child: AnimatedPadding(
             duration: Duration(seconds: 1),
@@ -81,20 +56,6 @@ class ProfileInfo extends StatelessWidget {
   openPopupWindow(BuildContext context, String text) {
     TextEditingController controller = new TextEditingController();
     return showDialog(context: context, builder: (context) {
-        // return SimpleDialog(
-        //   title: Text(text,  style: TextStyle(color: Colors.black),),
-          
-        //   children: <Widget>[
-        //     new TextField(
-        //       controller: controller,
-        //     ),
-        //     new MaterialButton(
-        //       child: Text('Submit', style: TextStyle(color: Colors.blue),),
-        //       elevation: 5.0,
-        //       onPressed: () {},
-        //     )
-        //   ],
-        // );
         return new CustomDialog(title: text, controller: controller, buttonText: 'Submit',);
     });
   }
