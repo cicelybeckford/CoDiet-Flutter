@@ -197,6 +197,7 @@ class _UserJourneyState extends State<UserJourney> {
                 new SizedBox(
                   width: 120,
                   height: 70,
+
                 )
               ]),
               new Row(
