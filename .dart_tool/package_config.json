@@ -32,6 +32,18 @@
       "languageVersion": "1.0"
     },
     {
+      "name": "charts_common",
+      "rootUri": "file:///Users/Sean/flutter/.pub-cache/hosted/pub.dartlang.org/charts_common-0.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "charts_flutter",
+      "rootUri": "file:///Users/Sean/flutter/.pub-cache/hosted/pub.dartlang.org/charts_flutter-0.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.23"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///Users/Sean/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11",
       "packageUri": "lib/",
@@ -102,6 +114,12 @@
       "rootUri": "file:///Users/Sean/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1",
       "packageUri": "lib/",
       "languageVersion": "1.19"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/Sean/flutter/.pub-cache/hosted/pub.dartlang.org/logging-0.11.3+2",
+      "packageUri": "lib/",
+      "languageVersion": "1.5"
     },
     {
       "name": "matcher",
@@ -212,7 +230,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2019-11-28T07:22:24.032693Z",
+  "generated": "2019-11-28T07:35:40.934574Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }

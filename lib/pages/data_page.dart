@@ -15,7 +15,6 @@ class UserData extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _UserDataState();
 }
-
 class _UserDataState extends State<UserData> {
   final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();

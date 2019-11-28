@@ -49,12 +49,8 @@ class _AuthPage extends State<AuthPage>{
       try {
         if (_isLoginForm) {
           userId = await widget.auth.signIn(_email, _password);
-          print('Signed in: $userId');
         } else {
           userId = await widget.auth.signUp(_email, _password);
-          //widget.auth.sendEmailVerification();
-          //_showVerifyEmailSentDialog();
-          print('Signed up user: $userId');
         }
         setState(() {
           _isLoading = false;
@@ -67,7 +63,6 @@ class _AuthPage extends State<AuthPage>{
             final fb.DatabaseReference ref = fb.database().ref("users/" + userId);
             var map = {"completeSignUp": "false"};
             await ref.set(map);
-            // await ref.push(map).future;
             widget.signupCallback();
           }
         }
@@ -169,7 +164,7 @@ class _AuthPage extends State<AuthPage>{
         child: CircleAvatar(
           backgroundColor: Colors.transparent,
           radius: 70.0,
-          child: Image.asset('assets/logo.png'),
+          child: Image.asset('assets/logo2.png'),
         ),
       ),
     );
