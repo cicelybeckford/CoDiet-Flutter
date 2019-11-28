@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:html' as html;
 
 class NavButton extends StatelessWidget {
   final text;
@@ -16,22 +15,12 @@ class NavButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (text == "Home") {
-      return FlatButton(
-        child: Text(text, textScaleFactor: 1.3, style: TextStyle(color: Colors.white)),
-        color: Colors.blue,
-        onPressed: () {
-          html.window.open("https://google.com", "CoDiet");
-        },
-      );
-    } else {
-      return OutlineButton(
-      child: Text(text, textScaleFactor: 1.3,),
+    return OutlineButton(
+      child: Text(text, textScaleFactor: 1, style: TextStyle(color: Colors.white)),
       borderSide: BorderSide(
         color: color,
       ),
       onPressed: onPressed,
-      );
-    }
+    );
   }
 }
