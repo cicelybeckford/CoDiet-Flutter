@@ -9,9 +9,8 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:intl/intl.dart';
 
 class UserJourney extends StatefulWidget {
-   UserJourney({Key key, this.userId, this.loginCallback}) : super(key: key);
+   UserJourney({Key key, this.userId}) : super(key: key);
 
-   final VoidCallback loginCallback;
    final String userId;
 
   @override
@@ -123,10 +122,6 @@ class _UserJourneyState extends State<UserJourney> {
     new Row(children: <Widget>[new SizedBox(width: 180),  new WeightJourney(data: data,)],));
     return new Scaffold(
       key: _scaffoldKey,
-      appBar: new AppBar(
-        title: new Text('Journey'),
-        elevation: 1,
-      ),
       body: 
         new SafeArea(
           top: false,
