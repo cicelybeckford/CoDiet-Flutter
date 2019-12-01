@@ -88,79 +88,101 @@ class ProfileInfo extends StatelessWidget {
               ),
       );
 
-  profileData(context) => Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: <Widget>[
-      SizedBox(
-            height: 100,
-      ),
-      Text(
-        "Hi Cicely!",
-        textScaleFactor: 4,
-        style: TextStyle(color: Colors.blue),
-      ),
-      SizedBox(
-        height: 10,
-      ),
-      Text(
-        "Congrats! You've consumed\n"
-        "1000 out of your required 2000\n"
-        "calories.",
-        softWrap: true,
-        textScaleFactor: 2,
-        style: TextStyle(color: Colors.black),
-      ),
-      SizedBox(
-        height: 100,
-      ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          RaisedButton(
-            shape: StadiumBorder(),
-            child: Text("Update weight", style: TextStyle(color: Colors.white), ),
-            color: Colors.blue,
-            onPressed: () {
-              openPopupWindow(context, "Weight");
-            },
-            padding: EdgeInsets.all(15),
+  profileData(context) => SizedBox(
+    width: MediaQuery.of(context).size.height * 0.8,
+      child: Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Text(
+          "Hi Cicely!",
+          textScaleFactor: 4,
+          style: TextStyle(color: Colors.blue),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Text(
+          "Congrats! You've consumed\n"
+          "1000 out of your required 2000\n"
+          "calories.",
+          softWrap: true,
+          textScaleFactor: 2,
+          style: TextStyle(color: Colors.black),
+        ),
+        SizedBox(
+          height: 50,
+        ),
+        Container(
+          width: MediaQuery.of(context).size.height * 0.6,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              SizedBox(
+                width: 55,
+              ),
+              Expanded(
+                              child: RaisedButton(
+                  shape: StadiumBorder(),
+                  child: Text("Update weight", style: TextStyle(color: Colors.white), ),
+                  color: Colors.blue,
+                  onPressed: () {
+                    openPopupWindow(context, "Weight");
+                  },
+                  padding: EdgeInsets.all(15),
+                ),
+              ),
+              SizedBox(
+                width: 40,
+              ),
+              Expanded(
+                              child: RaisedButton(
+                  shape: StadiumBorder(),
+                  child: Text("Add Calories", style: TextStyle(color: Colors.white),),
+                  color: Colors.blue,
+                  onPressed: () {
+                    openPopupWindow(context, "Calories");
+                  },
+                  padding: EdgeInsets.all(15),
+                ),
+              ),
+              SizedBox(
+                width: 55,
+              ),
+            ],
           ),
-          SizedBox(
-            width: 150,
-          ),
-          RaisedButton(
-            shape: StadiumBorder(),
-            child: Text("Add Calories", style: TextStyle(color: Colors.white),),
-            color: Colors.blue,
-            onPressed: () {
-              openPopupWindow(context, "Calories");
-            },
-            padding: EdgeInsets.all(15),
-          ),
-        ],
-      )
-    ],
+        )
+      ],
+    ),
   );
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
-      largeScreen: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[profileImage(context), profileData (context)],
-      ),
-      smallScreen: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          profileImage(context),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.1,
-          ),
-          profileData(context)
-        ],
-      ),
-    );
+        largeScreen: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            SizedBox(
+              height: 500,
+            ),
+            profileImage(context),
+            profileData(context),
+          ],
+        ),
+        smallScreen: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            profileImage(context),
+            SizedBox(
+              height: 20,
+            ), 
+            profileData(context),
+            SizedBox(
+              width: 50,
+            ),
+          ],
+        ),
+      );
   }
 }
