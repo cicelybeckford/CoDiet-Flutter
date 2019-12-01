@@ -68,8 +68,8 @@ class ProfileInfo extends StatelessWidget {
             : MediaQuery.of(context).size.width * 0.3,
         child: new CircularPercentIndicator(
                 radius: ResponsiveWidget.isSmallScreen(context)
-                    ? MediaQuery.of(context).size.height * 0.25
-                    : MediaQuery.of(context).size.width * 0.25,
+                    ? MediaQuery.of(context).size.height * 0.2
+                    : MediaQuery.of(context).size.width * 0.2,
                 lineWidth: 25.0,
                 animation: true,
                 percent: 0.7,
