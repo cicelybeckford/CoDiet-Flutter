@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["codiet|lib/utils/auth.dart","flutter|lib/material.dart","codiet|lib/pages/profile_page.dart","codiet|lib/pages/journey_page.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
