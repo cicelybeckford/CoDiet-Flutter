@@ -10427,6 +10427,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -10438,6 +10442,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12117,6 +12135,13 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------------
 skcms
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+skia
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 vulkanmemoryallocator
 
 Copyright 2018 Google Inc.
@@ -12155,6 +12180,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12166,6 +12195,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12211,12 +12254,24 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------------
 skia
 
+<<<<<<< HEAD
 Copyright (c) 2011 Google Inc. All rights reserved.
+=======
+<<<<<<< HEAD
+Copyright (c) 2011 Google Inc. All rights reserved.
+=======
+Copyright (c) 2014 Google Inc.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12260,6 +12315,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12295,6 +12364,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12306,6 +12379,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12327,6 +12414,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12338,6 +12429,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12360,6 +12465,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12371,6 +12480,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12392,6 +12515,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12403,6 +12530,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12424,6 +12565,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12435,6 +12580,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12456,6 +12615,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12467,6 +12630,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12488,6 +12665,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12499,6 +12680,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12520,6 +12715,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12531,6 +12730,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12552,6 +12765,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12563,6 +12780,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12584,6 +12815,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12595,6 +12830,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12616,6 +12865,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12627,6 +12880,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12649,6 +12916,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12660,6 +12931,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12681,6 +12966,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12692,6 +12981,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12713,6 +13016,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12724,6 +13031,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12745,6 +13066,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12756,6 +13081,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12777,6 +13116,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12788,6 +13131,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12809,6 +13166,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12820,6 +13181,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12841,6 +13216,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12852,6 +13231,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12873,6 +13266,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12884,6 +13281,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12906,6 +13317,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12917,6 +13332,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12938,6 +13367,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12949,6 +13382,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -12970,6 +13417,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -12981,6 +13432,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13002,6 +13467,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13013,6 +13482,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13034,6 +13517,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13045,6 +13532,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13066,6 +13567,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13077,6 +13582,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13098,6 +13617,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13109,6 +13632,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13130,6 +13667,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13173,6 +13714,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13194,6 +13749,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13205,6 +13764,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13226,6 +13799,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13237,6 +13814,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13258,6 +13849,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13269,6 +13864,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13290,6 +13899,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13301,6 +13914,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13322,6 +13949,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13333,6 +13964,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13354,6 +13999,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13365,6 +14014,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13386,6 +14049,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13397,6 +14064,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13418,6 +14099,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13429,6 +14114,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13450,6 +14149,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13461,6 +14164,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -13482,6 +14199,10 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
   * Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
 
@@ -13493,6 +14214,20 @@ met:
   * Neither the name of the copyright holder nor the names of its
     contributors may be used to endorse or promote products derived
     from this software without specific prior written permission.
+<<<<<<< HEAD
+=======
+=======
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+>>>>>>> bd5504d89cfe57f193a016a99f0637ebd05fa4c2
+>>>>>>> master
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
