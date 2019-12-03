@@ -25,20 +25,7 @@ class _UserJourneyState extends State<UserJourney> {
   UserInfo newUser = new UserInfo();
   DateTime end, start, initial;
   int count = 0;
-  List<WeightSeries> data = [
-    new WeightSeries(
-    date: (new DateTime(2019, 11, 24)),
-    weight: 50,
-    barColor: charts.ColorUtil.fromDartColor(Colors.blue)),
-    new WeightSeries(
-    date: (new DateTime(2019, 11, 25)),
-    weight: 70,
-    barColor: charts.ColorUtil.fromDartColor(Colors.blue)),
-    new WeightSeries(
-    date: (new DateTime(2019, 11, 26)),
-    weight: 100,
-    barColor: charts.ColorUtil.fromDartColor(Colors.blue)),
-  ];
+  List<WeightSeries> data;
 
   Future _chooseDate(BuildContext context, TextEditingController controller, bool start) async {
     if (initial == null) {
@@ -104,12 +91,39 @@ class _UserJourneyState extends State<UserJourney> {
       .showSnackBar(new SnackBar(backgroundColor: color, content: new Text(message))); 
   }
 
+  Future getChartData() async {
+    final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId + "/dates");
+    var weight;
+    DateTime date;
+    await ref.orderByKey().once('value').then((e){
+      e.snapshot.forEach((snapshot) {
+        var snap = snapshot.key;
+        date = convertToDate(snap.substring(5, 7) + '/' 
+        + snap.substring(8) + '/' + snap.substring(0, 4));
+        if ((date == start || date.isAfter(start)) && date.isBefore(end)){
+          weight = snapshot.child("weight").val();
+          data.add(new WeightSeries(
+            date: date, 
+            weight: weight, 
+            barColor: charts.ColorUtil.fromDartColor(Colors.blue))
+          );
+        }
+      });
+    }).whenComplete((){
+      setState(() {
+         count = 1;
+      });
+    });
+  }
+
   void submitForm() async {
     final FormState form = _formKey.currentState;
     if (!form.validate() || !(await isValid())) {
       showMessage('Some form entries are not valid!');
     } else {
       form.save(); 
+      data = new List<WeightSeries>();
+      await getChartData();
       setState(() {
         count = 1;
       });

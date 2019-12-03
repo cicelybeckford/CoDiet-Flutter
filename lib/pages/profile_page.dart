@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:codiet/utils/responsive_widget.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:firebase/firebase.dart' as fb;
 
 class ProfilePage extends StatefulWidget {
 
@@ -16,12 +17,70 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  // final Firestore dc = firestore();
-  // final FirebaseDatabase db = FirebaseDatabase.instance;
 
-  // Database db = database();
-  // DatabaseReference ref = db.ref("messages");
-  //TODO: handle populating the page with actual info from the db
+  String cals_per_day = "", cals_today = "", name = "";
+  Function update_func;
+  double percentage = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    print(widget.userId);
+    final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId);
+    ref.orderByKey().once('value').then((e){
+      setState(() {
+        cals_per_day = e.snapshot.child("caloriesPerDay").val();
+        if (e.snapshot.child("dates").child(new DateFormat("yyyy-MM-dd").format(new DateTime.now())).hasChild("calories")) {
+          cals_today = e.snapshot.child("dates").child(new DateFormat("yyyy-MM-dd").format(new DateTime.now())).child("calories").val();
+        } else {
+          cals_today = "0";
+        }
+        if (double.parse(cals_today) > double.parse(cals_per_day)) {
+          percentage = 1;
+        }
+        else {
+          percentage = double.parse(cals_today) / double.parse(cals_per_day);
+        }
+        name = e.snapshot.child("name").val();
+      });
+    });
+  }
+
+  bool submit(String title, String input) {
+    if (input == '') {
+      return true;
+    }
+    double value = double.tryParse(input);
+    if (value == null) {
+      return false;
+    }
+
+    final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId + "/dates/" + new DateFormat("yyyy-MM-dd").format(new DateTime.now()));
+    if (title == "Calories") {
+      cals_today = (double.parse(input) + double.parse(cals_today)).toStringAsFixed(0);
+      var map = {
+        "calories": cals_today,
+      };
+      ref.update(map);
+    } else {
+      var map = {
+        "weight": input,
+      };
+      ref.update(map);
+    }
+    setState(() {
+      name = name;
+      cals_today = cals_today;
+      cals_per_day = cals_per_day;
+      if (double.parse(cals_today) > double.parse(cals_per_day)) {
+        percentage = 1;
+      }
+        else {
+          percentage = double.parse(cals_today) / double.parse(cals_per_day);
+        }
+    });
+    return true;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +95,13 @@ class _ProfilePageState extends State<ProfilePage> {
               largeScreen: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  ProfileInfo(),
+                  ProfileInfo(
+                    name: name, 
+                    cals_per_day: cals_per_day, 
+                    cals_today: cals_today,
+                    percentage: percentage,
+                    update_func: submit,
+                  ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.2,
                   ),
@@ -53,12 +118,28 @@ class _ProfilePageState extends State<ProfilePage> {
 class ProfileInfo extends StatelessWidget {
   final String formattedDate = DateFormat('yMMMd').format(DateTime.now());
 
+  final String name;
+  final String cals_per_day;
+  final String cals_today;
+  final double percentage;
+  final Function update_func;
+
+  ProfileInfo({Key key,
+      @required this.name,
+      @required this.cals_per_day,
+      @required this.cals_today,
+      @required this.percentage,
+      @required this.update_func,
+      }): super(key: key);
+
+
   openPopupWindow(BuildContext context, String text) {
     TextEditingController controller = new TextEditingController();
     return showDialog(context: context, builder: (context) {
-        return new CustomDialog(title: text, controller: controller, buttonText: 'Submit',);
+        return new CustomDialog(title: text, controller: controller, buttonText: 'Submit', onPressed: update_func);
     });
   }
+
   profileImage(context) => Container(
         height: ResponsiveWidget.isSmallScreen(context)
             ? MediaQuery.of(context).size.height * 0.3
@@ -72,9 +153,9 @@ class ProfileInfo extends StatelessWidget {
                     : MediaQuery.of(context).size.width * 0.2,
                 lineWidth: 25.0,
                 animation: true,
-                percent: 0.7,
+                percent: percentage,
                 center: new Text(
-                  "70.0%",
+                  (percentage * 100).toStringAsFixed(0) + "%",
                   style:
                       new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
                 ),
@@ -94,7 +175,7 @@ class ProfileInfo extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Text(
-          "Hi Cicely!",
+           "Hi " + name + "!",
           textScaleFactor: 4,
           style: TextStyle(color: Colors.blue),
         ),
@@ -102,9 +183,9 @@ class ProfileInfo extends StatelessWidget {
           height: 10,
         ),
         Text(
-          "Congrats! You've consumed\n"
-          "1000 out of your required 2000\n"
-          "calories.",
+          "Congrats! You've consumed\n" +
+        cals_today + " out of your required " + cals_per_day + "\n"
+        "calories.",
           softWrap: true,
           textScaleFactor: 2,
           style: TextStyle(color: Colors.black),
