@@ -30,7 +30,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
   
 
-  String cals_per_day = "", cals_today = "", name = ""; 
+  String cals_per_day = "", cals_today = "", name = "";
+  //double weight; 
+  Function update_func;
   double percentage = 0.0;
 
   @override
@@ -39,20 +41,58 @@ class _ProfilePageState extends State<ProfilePage> {
     print(widget.userId);
     final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId);
     ref.orderByKey().once('value').then((e){
-      cals_per_day = e.snapshot.child("caloriesPerDay").val();
-      if (e.snapshot.child("dates").child(new DateFormat("yyyy-MM-dd").format(new DateTime.now())).hasChild("calories")) {
-        cals_today = e.snapshot.child("dates").child(new DateFormat("yyyy-MM-dd").format(new DateTime.now())).child("calories").val();
-      } else {
-        cals_today = "0";
-      }
+      setState(() {
+        cals_per_day = e.snapshot.child("caloriesPerDay").val();
+        if (e.snapshot.child("dates").child(new DateFormat("yyyy-MM-dd").format(new DateTime.now())).hasChild("calories")) {
+          cals_today = e.snapshot.child("dates").child(new DateFormat("yyyy-MM-dd").format(new DateTime.now())).child("calories").val();
+        } else {
+          cals_today = "0";
+        }
+        if (double.parse(cals_today) > double.parse(cals_per_day)) {
+          percentage = 1;
+        }
+        else {
+          percentage = double.parse(cals_today) / double.parse(cals_per_day);
+        }
+        name = e.snapshot.child("name").val();
+      });
+    });
+  }
+
+  bool submit(String title, String input) {
+    if (input == '') {
+      return true;
+    }
+    double value = double.tryParse(input);
+    if (value == null) {
+      return false;
+    }
+
+    final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId + "/dates/" + new DateFormat("yyyy-MM-dd").format(new DateTime.now()));
+    if (title == "Calories") {
+      cals_today = (double.parse(input) + double.parse(cals_today)).toStringAsFixed(0);
+      var map = {
+        "calories": cals_today,
+      };
+      ref.update(map);
+    } else {
+      var map = {
+        "weight": input,
+      };
+      ref.update(map);
+    }
+    setState(() {
+      name = name;
+      cals_today = cals_today;
+      cals_per_day = cals_per_day;
       if (double.parse(cals_today) > double.parse(cals_per_day)) {
         percentage = 1;
       }
-      else {
-        percentage = double.parse(cals_today) / double.parse(cals_per_day);
-      }
-      name = e.snapshot.child("name").val();
+        else {
+          percentage = double.parse(cals_today) / double.parse(cals_per_day);
+        }
     });
+    return true;
   }
 
   @override
@@ -73,7 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     cals_per_day: cals_per_day, 
                     cals_today: cals_today,
                     percentage: percentage,
-                    userId: widget.userId,
+                    update_func: submit,
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.2,
@@ -95,46 +135,22 @@ class ProfileInfo extends StatelessWidget {
   final String cals_per_day;
   final String cals_today;
   final double percentage;
-  final String userId;
+  final Function update_func;
 
   ProfileInfo({Key key,
       @required this.name,
       @required this.cals_per_day,
       @required this.cals_today,
       @required this.percentage,
-      @required this.userId,
+      @required this.update_func,
       }): super(key: key);
 
 
   openPopupWindow(BuildContext context, String text) {
     TextEditingController controller = new TextEditingController();
     return showDialog(context: context, builder: (context) {
-        return new CustomDialog(title: text, controller: controller, buttonText: 'Submit', onPressed: submit);
+        return new CustomDialog(title: text, controller: controller, buttonText: 'Submit', onPressed: update_func);
     });
-  }
-
-  bool submit(String title, String input) {
-    if (input == '') {
-      return true;
-    }
-    double value = double.tryParse(input);
-    if (value == null) {
-      return false;
-    }
-
-    final fb.DatabaseReference ref = fb.database().ref("users/" + userId + "/dates/" + new DateFormat("yyyy-MM-dd").format(new DateTime.now()));
-    if (title == "Calories") {
-      var map = {
-        "calories": (double.parse(input) + double.parse(cals_today)).toStringAsFixed(0),
-      };
-      ref.set(map);
-    } else {
-      var map = {
-        "weight": input,
-      };
-      ref.set(map);
-    }
-    return true;
   }
 
   profileImage(context) => Container(
