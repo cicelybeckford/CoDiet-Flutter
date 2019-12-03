@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["flutter|lib/material.dart","codiet|lib/utils/auth.dart","codiet|lib/utils/centered_view.dart","firebase|lib/firebase.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

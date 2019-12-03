@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["flutter|lib/material.dart","codiet|lib/utils/auth.dart","codiet|lib/utils/responsive_widget.dart","percent_indicator|lib/percent_indicator.dart","firebase|lib/firebase.dart","intl|lib/intl.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["html"],"hasMain":false}
