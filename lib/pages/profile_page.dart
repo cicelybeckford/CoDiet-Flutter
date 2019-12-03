@@ -1,13 +1,9 @@
 import 'package:codiet/utils/custom_dialog.dart';
-import 'package:firebase/firebase_io.dart';
 import 'package:flutter/material.dart';
 import 'package:codiet/utils/responsive_widget.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:firebase/firebase.dart' as fb;
-
-import '../utils/auth.dart';
-import '../utils/auth.dart';
 
 class ProfilePage extends StatefulWidget {
 
@@ -21,17 +17,8 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-  // final Firestore dc = firestore();
-  // final FirebaseDatabase db = FirebaseDatabase.instance;
-
-  // Database db = database();
-  // DatabaseReference ref = db.ref("messages");
-  //TODO: handle populating the page with actual info from the db
-
-  
 
   String cals_per_day = "", cals_today = "", name = "";
-  //double weight; 
   Function update_func;
   double percentage = 0.0;
 
@@ -162,8 +149,8 @@ class ProfileInfo extends StatelessWidget {
             : MediaQuery.of(context).size.width * 0.3,
         child: new CircularPercentIndicator(
                 radius: ResponsiveWidget.isSmallScreen(context)
-                    ? MediaQuery.of(context).size.height * 0.25
-                    : MediaQuery.of(context).size.width * 0.25,
+                    ? MediaQuery.of(context).size.height * 0.2
+                    : MediaQuery.of(context).size.width * 0.2,
                 lineWidth: 25.0,
                 animation: true,
                 percent: percentage,
@@ -182,79 +169,101 @@ class ProfileInfo extends StatelessWidget {
               ),
       );
 
-  profileData(context) => Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: <Widget>[
-      SizedBox(
-            height: 100,
-      ),
-      Text(
-        "Hi " + name + "!",
-        textScaleFactor: 4,
-        style: TextStyle(color: Colors.blue),
-      ),
-      SizedBox(
-        height: 10,
-      ),
-      Text(
-        "Congrats! You've consumed\n" +
+  profileData(context) => SizedBox(
+    width: MediaQuery.of(context).size.height * 0.8,
+      child: Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Text(
+           "Hi " + name + "!",
+          textScaleFactor: 4,
+          style: TextStyle(color: Colors.blue),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Text(
+          "Congrats! You've consumed\n" +
         cals_today + " out of your required " + cals_per_day + "\n"
         "calories.",
-        softWrap: true,
-        textScaleFactor: 2,
-        style: TextStyle(color: Colors.black),
-      ),
-      SizedBox(
-        height: 100,
-      ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          RaisedButton(
-            shape: StadiumBorder(),
-            child: Text("Update weight", style: TextStyle(color: Colors.white), ),
-            color: Colors.blue,
-            onPressed: () {
-              openPopupWindow(context, "Weight");
-            },
-            padding: EdgeInsets.all(15),
+          softWrap: true,
+          textScaleFactor: 2,
+          style: TextStyle(color: Colors.black),
+        ),
+        SizedBox(
+          height: 50,
+        ),
+        Container(
+          width: MediaQuery.of(context).size.height * 0.6,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              SizedBox(
+                width: 55,
+              ),
+              Expanded(
+                              child: RaisedButton(
+                  shape: StadiumBorder(),
+                  child: Text("Update weight", style: TextStyle(color: Colors.white), ),
+                  color: Colors.blue,
+                  onPressed: () {
+                    openPopupWindow(context, "Weight");
+                  },
+                  padding: EdgeInsets.all(15),
+                ),
+              ),
+              SizedBox(
+                width: 40,
+              ),
+              Expanded(
+                              child: RaisedButton(
+                  shape: StadiumBorder(),
+                  child: Text("Add Calories", style: TextStyle(color: Colors.white),),
+                  color: Colors.blue,
+                  onPressed: () {
+                    openPopupWindow(context, "Calories");
+                  },
+                  padding: EdgeInsets.all(15),
+                ),
+              ),
+              SizedBox(
+                width: 55,
+              ),
+            ],
           ),
-          SizedBox(
-            width: 150,
-          ),
-          RaisedButton(
-            shape: StadiumBorder(),
-            child: Text("Add Calories", style: TextStyle(color: Colors.white),),
-            color: Colors.blue,
-            onPressed: () {
-              openPopupWindow(context, "Calories");
-            },
-            padding: EdgeInsets.all(15),
-          ),
-        ],
-      )
-    ],
+        )
+      ],
+    ),
   );
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
-      largeScreen: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[profileImage(context), profileData (context)],
-      ),
-      smallScreen: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          profileImage(context),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.1,
-          ),
-          profileData(context)
-        ],
-      ),
-    );
+        largeScreen: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            SizedBox(
+              height: 500,
+            ),
+            profileImage(context),
+            profileData(context),
+          ],
+        ),
+        smallScreen: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            profileImage(context),
+            SizedBox(
+              height: 20,
+            ), 
+            profileData(context),
+            SizedBox(
+              width: 50,
+            ),
+          ],
+        ),
+      );
   }
 }

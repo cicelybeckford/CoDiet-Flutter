@@ -20,8 +20,8 @@ class WeightJourney extends StatelessWidget {
     ];
     return Center(
       child: Container(
-        height: 500,
-        width: 800,
+        height: MediaQuery.of(context).size.height * 0.7,
+        width: MediaQuery.of(context).size.width * 0.8,
         padding: EdgeInsets.all(20),
         child: Card(
           child: Padding(

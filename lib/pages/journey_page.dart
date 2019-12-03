@@ -133,7 +133,7 @@ class _UserJourneyState extends State<UserJourney> {
   @override
   Widget build(BuildContext context) {
     List<Widget> child = new List.generate(count, (int i) => 
-    new Row(children: <Widget>[new SizedBox(width: 180),  new WeightJourney(data: data,)],));
+    new Row(children: <Widget>[new SizedBox(width: MediaQuery.of(context).size.width * 0.07),  new WeightJourney(data: data,)],));
     return new Scaffold(
       key: _scaffoldKey,
       backgroundColor: Colors.white,
@@ -152,7 +152,7 @@ class _UserJourneyState extends State<UserJourney> {
                 ),
                 new Row(children: <Widget>[
                   new SizedBox(
-                    width: 120,
+                    width: MediaQuery.of(context).size.width * 0.05,
                   ),
                   new Expanded(
                       child: new TextFormField(
@@ -175,7 +175,7 @@ class _UserJourneyState extends State<UserJourney> {
                     }),
                   ),
                   new SizedBox(
-                    width: 70,
+                    width: MediaQuery.of(context).size.width * 0.05,
                   ),
                   new Expanded(
                       child: new TextFormField(
@@ -209,8 +209,8 @@ class _UserJourneyState extends State<UserJourney> {
                   ),
                 ),
                 new SizedBox(
-                  width: 120,
-                  height: 70,
+                  width: MediaQuery.of(context).size.width * 0.05,
+                  height: MediaQuery.of(context).size.width * 0.05,
 
                 )
               ]),

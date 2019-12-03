@@ -214,9 +214,7 @@ class _AuthPage extends State<AuthPage>{
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-          SizedBox(
-            height: 40.0,
-            width: 230,
+          Expanded(
             child: new RaisedButton(
               elevation: 1.0,
               shape: new RoundedRectangleBorder(
@@ -228,8 +226,9 @@ class _AuthPage extends State<AuthPage>{
             ),
           ),
           SizedBox(
-            height: 40.0,
-            width: 230,
+            width: 20,
+          ),
+          Expanded(
             child: new OutlineButton(
               shape: new RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(30.0)),

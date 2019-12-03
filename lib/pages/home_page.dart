@@ -64,7 +64,7 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin 
         ]
       ),
        floatingActionButton: Padding(
-         padding: const EdgeInsets.only(bottom: 40, right: 40),
+         padding: const EdgeInsets.only(bottom: 10, right: 10),
          child: FloatingActionButton(
           backgroundColor: Colors.blue,
           elevation: 9,
