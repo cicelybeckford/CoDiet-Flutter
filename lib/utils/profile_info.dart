@@ -24,7 +24,7 @@ class ProfileInfo extends StatelessWidget {
         //     )
         //   ],
         // );
-        return new CustomDialog(title: text, controller: controller, buttonText: 'Submit',);
+        return new CustomDialog(title: text, controller: controller, buttonText: 'Submit');
     });
   }
   profileImage(context) => Container(
