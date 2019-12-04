@@ -66,10 +66,6 @@ class _UserJourneyState extends State<UserJourney> {
         initial = convertToDate(snap.substring(5, 7) + '/' 
         + snap.substring(8) + '/' + snap.substring(0, 4));
       });
-    }).whenComplete((){
-      _scaffoldKey.currentState
-        .showSnackBar(new SnackBar(backgroundColor: Colors.red, content: new Text("Nothing to show yet!")));
-        initial = null; 
     });
   }
 
