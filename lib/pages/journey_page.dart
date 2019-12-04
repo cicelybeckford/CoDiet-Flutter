@@ -101,7 +101,7 @@ class _UserJourneyState extends State<UserJourney> {
         date = convertToDate(snap.substring(5, 7) + '/' 
         + snap.substring(8) + '/' + snap.substring(0, 4));
         if ((date == start || date.isAfter(start)) && date.isBefore(end)){
-          weight = snapshot.child("weight").val();
+          weight = double.parse(snapshot.child("weight").val());
           data.add(new WeightSeries(
             date: date, 
             weight: weight, 
