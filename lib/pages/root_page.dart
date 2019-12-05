@@ -1,4 +1,3 @@
-import 'package:codiet/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase/firebase.dart' as fb;
 import 'package:codiet/pages/home_page.dart';

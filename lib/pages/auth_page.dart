@@ -97,6 +97,47 @@ class _AuthPage extends State<AuthPage>{
     });
   }
 
+  void signInWithThirdParty(String title) async {
+    setState(() {
+      _errorMessage = "";
+      _isLoading = true;
+    });
+    try {
+      String userId  = "";
+      if (title == "Google") {
+        userId  = await widget.auth.googleSignIn();
+      } else {
+        userId = await widget.auth.facebookSignIn();
+      }
+      print("omg");
+      setState(() {
+        _isLoading = false;
+      });
+      final fb.DatabaseReference ref = fb.database().ref("users/" + userId);
+      ref.once("value").then((e) async {
+          if (e.snapshot.child("completeSignUp").exists() && 
+          (e.snapshot.child("completeSignUp").val() == "true" || 
+          e.snapshot.child("completeSignUp").val() == "false")){
+            print(e.snapshot.val());
+            widget.loginCallback();
+          } else {
+            print(e.snapshot.child("completeSignUp").exists());
+            var map = {"completeSignUp": "false"};
+            await ref.set(map);
+            widget.signupCallback();
+          }
+      });
+    } catch (e) {
+      print(e.message.toString());
+      print('Error: $e');
+      setState(() {
+        _isLoading = false;
+        _errorMessage = e.message.toString();
+        _formKey.currentState.reset();
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -132,6 +173,8 @@ class _AuthPage extends State<AuthPage>{
               showEmailInput(),
               showPasswordInput(),
               showButtons(),
+              showSeparator(),
+              showThirdPartyButtons(),
               SizedBox(height: 20,),
               showErrorMessage(),
             ],
@@ -237,6 +280,76 @@ class _AuthPage extends State<AuthPage>{
                   style: new TextStyle(fontSize: 15.0, color: Colors.blue)),
               onPressed: toggleFormMode,
             ),
+          ),
+        ],
+      )
+    );
+  }
+
+  Widget showThirdPartyButtons() {
+        return new Padding(
+            padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+              Expanded(
+                child: new FlatButton(
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  color: Colors.red,
+                  child: new Text("Login with Google",
+                      style: new TextStyle(fontSize: 15.0, color: Colors.white)),
+                  onPressed: (){
+                    signInWithThirdParty("Google");
+                  },
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Expanded(
+                child: new FlatButton(
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  color: Colors.blue[800],
+                  child: new Text("Login with Facebook",
+                      style: new TextStyle(fontSize: 15.0, color: Colors.white)),
+                  onPressed: (){
+                    signInWithThirdParty("FB");
+                  },
+            ),
+          ),
+        ],
+      )
+    );
+  }
+
+  Widget showSeparator() {
+    return new Padding(
+        padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+          Expanded(
+            child: new Divider(
+              indent: 120,
+              thickness: 1,
+              color: Colors.black38,
+            )
+          ),
+          SizedBox(
+            width: 40,
+            child: new Text(
+              "OR",
+              textAlign: TextAlign.center,
+            )
+          ),
+          Expanded(
+            child: new Divider(
+              endIndent: 120,
+              thickness: 1,
+              color: Colors.black38,
+            )
           ),
         ],
       )
