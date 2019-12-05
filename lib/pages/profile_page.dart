@@ -25,7 +25,6 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   void initState() {
     super.initState();
-    print(widget.userId);
     final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId);
     ref.orderByKey().once('value').then((e){
       setState(() {

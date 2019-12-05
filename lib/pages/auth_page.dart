@@ -55,12 +55,19 @@ class _AuthPage extends State<AuthPage>{
         setState(() {
           _isLoading = false;
         });
+        final fb.DatabaseReference ref = fb.database().ref("users/" + userId);
 
         if (userId.length > 0 && userId != null) {
           if (_isLoginForm){
-            widget.loginCallback();
+            ref.once("value").then((e) async {
+              if (e.snapshot.child("completeSignUp").exists() && 
+              (e.snapshot.child("completeSignUp").val() == "true")){
+                widget.loginCallback();
+              } else {
+                widget.signupCallback();
+              }
+            });
           } else {
-            final fb.DatabaseReference ref = fb.database().ref("users/" + userId);
             var map = {"completeSignUp": "false"};
             await ref.set(map);
             widget.signupCallback();
@@ -109,26 +116,24 @@ class _AuthPage extends State<AuthPage>{
       } else {
         userId = await widget.auth.facebookSignIn();
       }
-      print("omg");
       setState(() {
         _isLoading = false;
       });
       final fb.DatabaseReference ref = fb.database().ref("users/" + userId);
       ref.once("value").then((e) async {
           if (e.snapshot.child("completeSignUp").exists() && 
-          (e.snapshot.child("completeSignUp").val() == "true" || 
-          e.snapshot.child("completeSignUp").val() == "false")){
-            print(e.snapshot.val());
+          (e.snapshot.child("completeSignUp").val() == "true")){
             widget.loginCallback();
+          } else if (e.snapshot.child("completeSignUp").exists() &&
+          e.snapshot.child("completeSignUp").val() == "false") {
+            widget.signupCallback();
           } else {
-            print(e.snapshot.child("completeSignUp").exists());
             var map = {"completeSignUp": "false"};
             await ref.set(map);
             widget.signupCallback();
           }
       });
     } catch (e) {
-      print(e.message.toString());
       print('Error: $e');
       setState(() {
         _isLoading = false;

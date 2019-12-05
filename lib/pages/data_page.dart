@@ -84,7 +84,7 @@ class _UserDataState extends State<UserData> {
       showMessage('Some form entries are not valid!');
     } 
     else { 
-      form.save(); //TODO: handle pushing user info to db @ Sean
+      form.save();
       final fb.DatabaseReference ref = fb.database().ref("users/" + widget.userId);
       newUser.calculateAge();
       newUser.calculateCalories();

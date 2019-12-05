@@ -28,23 +28,19 @@ class _RootPageState extends State<RootPage> {
   @override
   void initState() {
     super.initState();
-    widget.auth.getCurrentUser().then((user) {
+    widget.auth.getCurrentUser().then((user) async {
       var snap;
       if (user != null) {
         _userId = user?.uid;
         final fb.DatabaseReference ref = fb.database().ref("users/" + _userId + "/completeSignUp");
-        ref.onValue.listen((e) {
+       await ref.once("value").then((e){
           snap = e.snapshot;
-        });
-        ref.once('value').whenComplete(() {
-            setState(() {
-            if (snap != null && snap.val() == "false") {
+          if (snap != null && snap.val() == "false") {
               authStatus = AuthStatus.SIGNED_UP;
             } else {
               authStatus =
                 user?.uid == null ? AuthStatus.NOT_LOGGED_IN : AuthStatus.LOGGED_IN;
             }
-          });
         });
       } else {
         setState(() {
