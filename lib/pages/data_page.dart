@@ -95,6 +95,9 @@ class _UserDataState extends State<UserData> {
         'sex': newUser.sex,
         'dob': newUser.dob.toString(),
         'height': newUser.height.toString(),
+        'dates': {
+          new DateFormat("yyyy-MM-dd").format(new DateTime.now()): newUser.initialWeight.toString(),
+        },
         'initialWeight': newUser.initialWeight.toString(),
         'goalWeight': newUser.goalWeight.toString(),
         'caloriesPerDay': newUser.calories.toString(),

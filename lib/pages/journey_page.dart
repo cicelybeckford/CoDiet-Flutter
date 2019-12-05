@@ -119,7 +119,10 @@ class _UserJourneyState extends State<UserJourney> {
   void submitForm() async {
     final FormState form = _formKey.currentState;
     if (!form.validate() || !(await isValid())) {
-      showMessage('Some form entries are not valid!');
+      setState(() {
+         count = 0;
+      });
+      showMessage('Modify your selection or try again when we have more data!');
     } else {
       form.save(); 
       data = new List<WeightSeries>();
