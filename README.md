@@ -2,6 +2,10 @@
 
 Co-Diet is a web application that aids users in tracking their weight change and daily calorie intake/loss per day. It requires users to have an account in order to utilize the services. They will be able to view their weight journey via a chart.
 
+# Links
+https://codiet-30955.firebaseapp.com/
+https://codiet.appspot.com/
+
 # Demo
 
 https://drive.google.com/open?id=17jeS5c6tKYNrvWM3HpJwco03Uu-OiPCi
