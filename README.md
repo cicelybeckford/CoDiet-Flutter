@@ -9,8 +9,8 @@ https://codiet.appspot.com/
 
 **Notes
 - Added the Google and Facebook login based on feedback, however, Facebook login can't be used with non-test users. Therefore for Facebook these test users can be used:
-Email address: amoiqwwpew_1575595069@tfbnw.net  Password: temporary
-Email address: xfhcypidgw_1575595070@tfbnw.net  Password: temporary
+  - **Email address: amoiqwwpew_1575595069@tfbnw.net  Password: temporary
+  - **Email address: xfhcypidgw_1575595070@tfbnw.net  Password: temporary
 
 # Demo
 
