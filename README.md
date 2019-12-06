@@ -8,11 +8,13 @@ https://codiet-30955.firebaseapp.com/  **Preferred**
 https://codiet.appspot.com/
 
 **Notes
-- Added the Google and Facebook login based on feedback, however, Facebook login can't be used with non-test users. Therefore for Facebook these test users can be used:
+- Added the Google and Facebook login based on feedback, however, Facebook login can't be used with non-test users. Therefore for Facebook these test users can be used: 
+<pre>
   - Email address: amoiqwwpew_1575595069@tfbnw.net     Password: temporary
   - Email address: xfhcypidgw_1575595070@tfbnw.net     Password: temporary
 - Test user with progressive data to show chart functionality:
-  - Email addres: howarduni@gmail.com       Password: testing
+  - Email address: howarduni@gmail.com       Password: testing
+<pre>
 
 # Demo
 
